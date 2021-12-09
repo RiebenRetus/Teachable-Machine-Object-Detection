@@ -99,12 +99,12 @@ def main():
     model = tf.models.load_model(model_path, compile=False)
 
     # initialize webcam video object
-    cap = cv2.VideoCapture(0)
+    cap = cv2.VideoCapture(2)
 
     # width & height of webcam video in pixels -> adjust to your size
     # adjust values if you see black bars on the sides of capture window
-    frameWidth = 1280
-    frameHeight = 720
+    frameWidth = 240
+    frameHeight = 240
 
     # set width and height in pixels
     cap.set(cv2.CAP_PROP_FRAME_WIDTH, frameWidth)
